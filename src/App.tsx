@@ -1,12 +1,33 @@
 import "./App.css";
-import data from "./data.json";
+import { ProductData } from "./type";
+//import data from "./data.json";
 import ProductImage from "./components/ProductImage/ProductImage";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import AddToCart from "./components/AddToCart/AddToCart";
 import Cart from "./components/Cart/Cart";
 import { useCartDialog, useAddToCartDialog } from "./utils/context";
+
+const data: ProductData = {
+  images: [
+    "src/assets/image-product-1.jpg",
+    "src/assets/image-product-2.jpg",
+    "src/assets/image-product-3.jpg",
+    "src/assets/image-product-4.jpg",
+  ],
+  imagesThumbnail: [
+    "src/assets/image-product-1-thumbnail.jpg",
+    "src//assets/image-product-2-thumbnail.jpg",
+    "src/assets/image-product-3-thumbnail.jpg",
+    "src/assets/image-product-4-thumbnail.jpg",
+  ],
+  company: "SNEAKER COMPANY",
+  title: "Fall Limited Edition Sneakers",
+  description:
+    "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
+  price: 125.0,
+  reduction: 50,
+};
 const App = () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { dialog } = useCartDialog();
   const { nbArticles, handleUpdate } = useAddToCartDialog();
 

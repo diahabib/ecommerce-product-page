@@ -1,5 +1,5 @@
 export interface ProductData {
-  images: string[];
+  images: Array<string>;
   imagesThumbnail: string[];
   company: string;
   title: string;
