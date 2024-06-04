@@ -24,6 +24,8 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
   handleShowNext,
   handleClickDialog,
 }) => {
+  console.log(data.images[0]);
+  console.log(iconNext);
   return (
     <>
       <div
