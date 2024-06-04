@@ -1,0 +1,135 @@
+/*body {
+  background-color: red;
+}*/
+
+/*.image {
+  border-radius: 120px;
+}*/
+
+/*
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Orange: hsl(26, 100%, 55%)
+- Pale orange: hsl(25, 100%, 94%)
+
+### Neutral
+
+- Very dark blue: hsl(220, 13%, 13%)
+- Dark grayish blue: hsl(219, 9%, 45%)
+- Grayish blue: hsl(220, 14%, 75%)
+- Light grayish blue: hsl(223, 64%, 98%)
+- White: hsl(0, 0%, 100%)
+- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+
+
+*/
+.product__card {
+  flex: 1 0 0;
+}
+
+.thumb {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.title-2 {
+  font-weight: 700;
+  color: hsl(26, 100%, 55%);
+}
+
+.title-1 {
+  font-weight: 600;
+}
+
+.description {
+  color: hsl(219, 9%, 45%);
+  font-weight: 400;
+  max-width: 98%;
+  text-wrap: wrap;
+}
+
+@media screen and (min-width: 1024px) {
+  .description {
+    max-width: 95%;
+  }
+}
+
+.reduction {
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+}
+
+.add_to_cart__button {
+  background-color: hsl(26, 100%, 55%);
+}
+
+.cart__window {
+  z-index: 10;
+  position: absolute;
+
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  height: 34vh;
+  width: 92vw;
+  background-color: white;
+
+  border: 1px solid white;
+  border-radius: 15px;
+
+  flex-direction: column;
+}
+
+.cart__title {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .cart__window {
+    height: 30vh;
+    width: 21vw;
+    top: -13%;
+    left: 82%;
+    border-radius: 0%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cart__btn {
+    position: absolute;
+    bottom: 10%;
+  }
+}
+
+.cart__content--empty {
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(219, 9%, 45%);
+  font-weight: 700;
+  font-size: 16px;
+}

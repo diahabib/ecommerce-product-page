@@ -1,0 +1,32 @@
+.dialog-title {
+  margin-bottom: 20px;
+}
+
+.dialog-window {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  pgadding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  flex-direction: column;
+}
+
+.thumb {
+  cursor: pointer;
+}
+
+.thusmb:hover {
+  filter: brightness(1.25);
+}
+
+@media screen and (max-width: 380px) {
+  .main__image {
+    max-height: 300px;
+  }
+}
