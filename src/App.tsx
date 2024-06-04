@@ -5,19 +5,22 @@ import ProductDetails from "./components/ProductDetails/ProductDetails";
 import AddToCart from "./components/AddToCart/AddToCart";
 import Cart from "./components/Cart/Cart";
 import { useCartDialog, useAddToCartDialog } from "./utils/context";
+import imageProduct1 from "/src/assets/image-product-1.jpg";
+import imageProduct2 from "/src/assets/image-product-2.jpg";
+import imageProduct3 from "/src/assets/image-product-3.jpg";
+import imageProduct4 from "/src/assets/image-product-4.jpg";
+import imageProduct1Thumb from "src/assets/image-product-1-thumbnail.jpg";
+import imageProduct2Thumb from "src/assets/image-product-2-thumbnail.jpg";
+import imageProduct3Thumb from "src/assets/image-product-3-thumbnail.jpg";
+import imageProduct4Thumb from "src/assets/image-product-4-thumbnail.jpg";
 
 const data: ProductData = {
-  images: [
-    "/src/assets/image-product-1.jpg",
-    "../../assets/image-product-2.jpg",
-    "../../assets/image-product-3.jpg",
-    "../../assets/image-product-4.jpg",
-  ],
+  images: [imageProduct1, imageProduct2, imageProduct3, imageProduct4],
   imagesThumbnail: [
-    "src/assets/image-product-1-thumbnail.jpg",
-    "../../assets/image-product-2-thumbnail.jpg",
-    "../../assets/image-product-3-thumbnail.jpg",
-    "../../assets/image-product-4-thumbnail.jpg",
+    imageProduct1Thumb,
+    imageProduct2Thumb,
+    imageProduct3Thumb,
+    imageProduct4Thumb,
   ],
   company: "SNEAKER COMPANY",
   title: "Fall Limited Edition Sneakers",
