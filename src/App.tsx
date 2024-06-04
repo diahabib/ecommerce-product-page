@@ -9,10 +9,10 @@ import imageProduct1 from "/src/assets/image-product-1.jpg";
 import imageProduct2 from "/src/assets/image-product-2.jpg";
 import imageProduct3 from "/src/assets/image-product-3.jpg";
 import imageProduct4 from "/src/assets/image-product-4.jpg";
-import imageProduct1Thumb from "src/assets/image-product-1-thumbnail.jpg";
-import imageProduct2Thumb from "src/assets/image-product-2-thumbnail.jpg";
-import imageProduct3Thumb from "src/assets/image-product-3-thumbnail.jpg";
-import imageProduct4Thumb from "src/assets/image-product-4-thumbnail.jpg";
+import imageProduct1Thumb from "/src/assets/image-product-1-thumbnail.jpg";
+import imageProduct2Thumb from "/src/assets/image-product-2-thumbnail.jpg";
+import imageProduct3Thumb from "/src/assets/image-product-3-thumbnail.jpg";
+import imageProduct4Thumb from "/src/assets/image-product-4-thumbnail.jpg";
 
 const data: ProductData = {
   images: [imageProduct1, imageProduct2, imageProduct3, imageProduct4],
